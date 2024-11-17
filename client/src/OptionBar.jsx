@@ -87,7 +87,7 @@ const OptionBar = (props) => {
         <>
             <form className='flex items-center justify-center flex-col' onSubmit={(e) => handleSubmit(e)}>
                 <div className='px-4 w-[80%] bg-slate-200 rounded-2xl m-5 flex p-2 items-center align-center gap-1'>
-                    <FaRegKeyboard className='text-xl text-slate-500' />
+                    <FaRegKeyboard className='text-xl text-slate-500' /> 
                     <input
                         type="text"
                         className='w-full text-slate-900 text-lg bg-transparent border-none outline-none  rounded-2xl p-1'
