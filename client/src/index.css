@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  /* * {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+  } */
+
+#thumbnail-style1 {
+  background: conic-gradient(at top right, #eab308, #3b82f6, #7c1d6f); /* Darker shades */
+}
+
+#thumbnail-style2 {
+  background: conic-gradient(at top right, #eab308, #f87171, #7c1d6f); /* Darker shades */
+}
+
+#thumbnail-style3 {
+  background: conic-gradient(at top right, #eab308, #34d399, #7c1d6f); /* Darker shades */
+}
