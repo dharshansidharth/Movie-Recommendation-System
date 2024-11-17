@@ -19,7 +19,7 @@ def movies():
     
     
     if request.method == 'POST':
-        print(request)
+        # print(request)
         if request.content_type != 'application/json':
             return jsonify({'error': 'Content-Type must be application/json'}), 415
 
@@ -35,13 +35,13 @@ def movies():
         user_votes = data.get('votes') if data.get('votes') else 0
         user_count = data.get('count') if data.get('count') else 0
         
-        print(f'Received movie: {user_movie}')
-        print(f'Received genere: {user_genere}')
-        print(f'Received budget: {user_budget}')
-        print(f'Received runtime: {user_runtime}')
-        print(f'Received popularity: {user_popularity}')
-        print(f'Received votes: {user_votes}')
-        print(f'Received count: {user_count}')
+        # print(f'Received movie: {user_movie}')
+        # print(f'Received genere: {user_genere}')
+        # print(f'Received budget: {user_budget}')
+        # print(f'Received runtime: {user_runtime}')
+        # print(f'Received popularity: {user_popularity}')
+        # print(f'Received votes: {user_votes}')
+        # print(f'Received count: {user_count}')
         
     
     
@@ -65,38 +65,38 @@ def movies():
     
     
                 
-    return jsonify({
-        'movies' : [{
-            'name': 'Avatar Movie',
-            'desc': 'Avatar Movie',
-        },
-        {
-            'name': 'Spiderman',
-            'desc': 'Spiderman Movie'
-        },
-        {
-            'name': 'Ironman',
-            'desc': 'Ironman Movie'
-        },
-        {
-            'name': 'Jackie Chan',
-            'desc': 'Jackie Chan movie'
-        },
-        {
-            'name': 'Venom',
-            'desc': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi commodi quidem omnis possimus obcaecati asperiores sit fuga ab, ullam esse delectus, similique ad ex officiis, perspiciatis unde vero voluptatem culpa.'
-        },
-        {
-            'name': 'Harry potter',
-            'desc': 'movie  '
-        },
-        {
-            'name': 'Harry potter',
-            'desc': 'movie  '
-        }
-        ] 
-    }
-    )
+    # return jsonify({
+    #     'movies' : [{
+    #         'name': 'Avatar Movie',
+    #         'desc': 'Avatar Movie',
+    #     },
+    #     {
+    #         'name': 'Spiderman',
+    #         'desc': 'Spiderman Movie'
+    #     },
+    #     {
+    #         'name': 'Ironman',
+    #         'desc': 'Ironman Movie'
+    #     },
+    #     {
+    #         'name': 'Jackie Chan',
+    #         'desc': 'Jackie Chan movie'
+    #     },
+    #     {
+    #         'name': 'Venom',
+    #         'desc': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi commodi quidem omnis possimus obcaecati asperiores sit fuga ab, ullam esse delectus, similique ad ex officiis, perspiciatis unde vero voluptatem culpa.'
+    #     },
+    #     {
+    #         'name': 'Harry potter',
+    #         'desc': 'movie  '
+    #     },
+    #     {
+    #         'name': 'Harry potter',
+    #         'desc': 'movie  '
+    #     }
+    #     ] 
+    # }
+    # )
     
 if __name__ == '__main__':
     app.run(debug = True , port = 8000)
